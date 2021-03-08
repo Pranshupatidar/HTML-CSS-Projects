@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Survey Form</title>
+    </head>
+    <style>
+        body{
+            text-align: center;
+            color: white;
+            font-family:Arial, Helvetica, sans-serif;  
+            font-weight: 400;
+            background-color: rgb(0, 195, 255);
+            background-image: url('office.jpg');
+            background-blend-mode:soft-light;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            background-color: rgba(0, 0, 255, 0.596);
+            padding: 40px;
+            border-radius: 8px;           
+        }
+        #phorm{
+            padding-left: 400px;
+            padding-right: 400px;
+        }
+        form{
+            background-color: rgba(0, 0, 0, 0.527);
+            text-align: left;
+            padding: 40px;
+            border-radius: 8px;
+        }
+        input[type='text'],select,textarea{
+            text-align: left;
+            border-radius: 4px;
+            width:90%;
+            margin: 10px;
+            padding: 5px 10px;
+        }
+        label,p{
+            margin-left: 10px;
+        }
+        h2{
+            padding: 20px;
+        }
+        input[type='radio']{
+            padding: 10px;
+        }
+        input[type='submit']{
+            margin-left: 10px;
+            width:95%;
+            padding: 10px;
+            background-color: rgb(12, 192, 12);
+            color:rgb(255, 255, 255);
+            font-family:sans-serif;
+        }
+        input[type='submit']:hover{
+            margin-left: 10px;
+            width:95%;
+            padding: 10px;
+            background-color: rgb(1, 163, 1);
+            color:rgb(255, 255, 255);
+            font-family:sans-serif;
+        }
+    </style>
+    <body>
+        <h1>Product Survey Form</h1>
+        <h2><i>Thank you for taking the time to help us improve the product</i></h2>
+        <div id='phorm'>
+        <form>
+            <div>
+            <label for="fname">Name</label>
+            <br>
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <br>
+                <input type="text" id="email" name="email" placeholder="Your e-mail.." required>
+            </div>
+            <br>
+            <div>
+                <label for="age">Age (Optional)</label>
+                <br>
+                <input type="text" id="age" name="age" placeholder="Your age..">
+            </div>
+            <br>
+            <label for="country">Which option best describes your current role?</label>
+            <select id="country" name="country" required>
+                <option disabled selected value="S">Select current role</option>
+              <option value="Student">Student</option>
+              <option value="Full-time worker">Full-time worker</option>
+              <option value="Part-time learner">Part-time learner</option>
+            </select>
+            <br>
+            <p>Would you recommend Product to a friend?</p>
+            <label>
+                <input name='Definitely' type="radio" value='Definitely' checked>Definitely
+            </label>
+            <br>
+            <label>
+                <input name='Maybe' type="radio" value='Maybe'>May be
+            </label>
+            <br>
+            <label>
+                <input name='Notsure' type="radio" value='Notsure'>Not Sure
+            </label>
+            <br>
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <label for='fe'>
+                <input type="checkbox" value='frond-end' name='fe'>Front-end Projects
+            </label>
+            <br>
+            <label for='be'>
+                <input type="checkbox" value='Back-end' name='be'>Back-end Projects
+            </label>
+            <br>
+            <label for='ch'>
+                <input type="checkbox" value='frond-end' name='ch'>Challenges
+            </label>
+            <br>
+            <p>Any comments or suggestions?</p>
+            <textarea name='comments' placeholder="Enter your comment here"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+    </body>
+</html>
